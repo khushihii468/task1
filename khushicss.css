@@ -1,0 +1,63 @@
+.changing-color-text {
+    animation: changeColor 10s linear infinite;
+}
+
+@keyframes changeColor {
+    0% { color: red; }
+    25% { color: blue; }
+    50% { color: green; }
+    75% { color: orange; }
+    100% { color: purple; }
+}
+/* Style for the container of the icons */
+.top-right-icons {
+    position: fixed; /* Position the icons relative to the viewport */
+    top: 20px; /* Adjust the top distance as needed */
+    right: 100px; /* Adjust the right distance as needed */
+}
+
+/* Style for the individual icon links */
+.top-right-icons a {
+    margin-right: 25px; /* Add some spacing between the icons */
+}
+
+/* Style for the icon images (adjust width and height as needed) */
+.top-right-icons img {
+    width: 32px;
+    height: 32px;
+}
+
+/* Style the container */
+.container {
+    position: relative;
+
+}
+
+/* Position the image at the bottom right corner */
+#bottom-image {
+    position: absolute;
+    bottom: -150px;
+    right: 20px;
+    cursor: pointer;
+    max-width: 3.5%; /* Maintain proportion */
+    height: auto;
+}
+
+/* Hide the icons initially */
+.hidden-icons {
+    display: none;
+    position: absolute;
+    bottom: -75px; /* Adjust as needed */
+    right: 0;
+   
+}
+.hidden-icons img {
+    width: 35px; /* Adjust the width of the hidden icons */
+    height: 35px; /* Adjust the height of the hidden icons */
+    margin-right: 28px; /* Adjust the spacing between icons */
+}
+.hidden-icons a {
+    display:block;
+    margin-bottom:15px;
+
+}
