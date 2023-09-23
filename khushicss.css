@@ -1,63 +1,213 @@
+.maintext {
+    font-size: 85px;
+    margin-left: 204px;
+    margin-top: 160px;
+    color: white;
+}
+
+.initials {
+    margin-top: 25px;
+    margin-left: 25px;
+
+    font-size: 40px
+}
+
+.subtext {
+    margin-left: 204px;
+    color: white;
+    font-size: 27px;
+
+}
+
 .changing-color-text {
     animation: changeColor 10s linear infinite;
 }
 
+.mainimg img {
+    position: absolute;
+    right: 100px;
+    top: 185px;
+}
+
+.group1 img {
+    position: absolute;
+    left: 700px;
+    bottom: 63px;
+}
+
 @keyframes changeColor {
-    0% { color: red; }
-    25% { color: blue; }
-    50% { color: green; }
-    75% { color: orange; }
-    100% { color: purple; }
+    0% {
+        color: red;
+    }
+
+    25% {
+        color: blue;
+    }
+
+    50% {
+        color: green;
+    }
+
+    75% {
+        color: orange;
+    }
+
+    100% {
+        color: purple;
+    }
 }
-/* Style for the container of the icons */
+
 .top-right-icons {
-    position: fixed; /* Position the icons relative to the viewport */
-    top: 20px; /* Adjust the top distance as needed */
-    right: 100px; /* Adjust the right distance as needed */
+    position: fixed;
+    top: 20px;
+    right: 100px;
 }
 
-/* Style for the individual icon links */
 .top-right-icons a {
-    margin-right: 25px; /* Add some spacing between the icons */
+    margin-right: 25px;
 }
 
-/* Style for the icon images (adjust width and height as needed) */
 .top-right-icons img {
     width: 32px;
     height: 32px;
 }
 
-/* Style the container */
-.container {
-    position: relative;
 
+
+@media screen and (max-width: 1111px) {
+    .maintext {
+        font-size: 65px;
+        margin-left: 170px;
+        margin-top: 180px;
+    }
+
+    .subtext {
+        margin-left: 170px;
+
+        font-size: 25px;
+
+    }
+
+    .mainimg img {
+        transform: scale(0.75);
+        right: 74px;
+    }
+
+    .group1 img {
+
+        left: 500px;
+
+    }
 }
 
-/* Position the image at the bottom right corner */
-#bottom-image {
-    position: absolute;
-    bottom: -150px;
-    right: 20px;
-    cursor: pointer;
-    max-width: 3.5%; /* Maintain proportion */
-    height: auto;
+@media screen and (max-width: 900px) {
+    .maintext {
+        font-size: 55px;
+        margin-left: 140px;
+
+    }
+
+    .subtext {
+        margin-left: 140px;
+
+        font-size: 20px;
+
+    }
+
+    .mainimg img {
+        transform: scale(0.6);
+        right: 40px;
+    }
+
+    .group1 img {
+
+        left: 400px;
+        transform: scale(0.8);
+    }
 }
 
-/* Hide the icons initially */
-.hidden-icons {
-    display: none;
-    position: absolute;
-    bottom: -75px; /* Adjust as needed */
-    right: 0;
-   
-}
-.hidden-icons img {
-    width: 35px; /* Adjust the width of the hidden icons */
-    height: 35px; /* Adjust the height of the hidden icons */
-    margin-right: 28px; /* Adjust the spacing between icons */
-}
-.hidden-icons a {
-    display:block;
-    margin-bottom:15px;
+@media screen and (max-width: 860px) {
+    .maintext {
+        font-size: 40px;
+        margin-left: 100px;
+        margin-top: 200px;
+    }
 
+    .subtext {
+        margin-left: 100px;
+
+        font-size: 20px;
+
+    }
+
+    .mainimg img {
+        top: 185px;
+        right: 20px;
+    }
+
+    .group1 img {
+        transform: scale(0.6);
+        left: 300px;
+
+    }
+}
+
+@media screen and (max-width: 660px) {
+    .maintext {
+        font-size: 38px;
+        margin-left: 220px;
+        margin-top: 80px;
+    }
+
+    .subtext {
+        margin-left: 220px;
+
+        font-size: 15px;
+
+    }
+
+    .mainimg img {
+        top: 260px;
+        left: 166px;
+    }
+
+    .group1 img {
+        transform: scale(0.44);
+        left: 250x;
+
+    }
+
+    .initials {
+        font-size: 20px;
+    }
+}
+
+@media screen and (max-width: 535px) {
+    .maintext {
+        font-size: 38px;
+        margin-left: 140px;
+        margin-top: 80px;
+    }
+
+    .subtext {
+        margin-left: 140px;
+
+        font-size: 15px;
+
+    }
+
+    .mainimg img {
+        top: 260px;
+        left: 86px;
+    }
+
+    .group1 img {
+        transform: scale(0.44);
+        left: 190px;
+
+    }
+
+    .initials {
+        font-size: 15px;
+    }
 }
